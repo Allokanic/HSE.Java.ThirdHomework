@@ -44,7 +44,7 @@ public class Main {
                 result = "лет";
             }
 
-            System.out.printf("%s %s.%s. пол: %c, возраст: %d %s%n", lastName, firstName.substring(0, 1), middleName.substring(0, 1), gender, age, result );
+            System.out.printf("%s %s.%s. %c, %d %s%n", lastName, firstName.charAt(0), middleName.charAt(0), gender, age, result );
         } catch (Exception e) {
             System.err.println("Ошибка: введенная дата рождения не является корректной.");
         }
@@ -54,9 +54,9 @@ public class Main {
     private static char getGenderByMiddleName(String middleName) {
         char gender;
         if (middleName.endsWith("ч")) {
-            gender = 'м';
+            gender = 'М';
         } else {
-            gender = 'ж';
+            gender = 'Ж';
         }
         return gender;
     }
