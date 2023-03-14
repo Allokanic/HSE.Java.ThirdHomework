@@ -44,7 +44,7 @@ public class Main {
                 result = "лет";
             }
 
-            System.out.printf("%s %s.%s. %c, %d %s%n", lastName, firstName.charAt(0), middleName.charAt(0), gender, age, result );
+            System.out.printf("%s %s.%s. %c %d %s%n", lastName, firstName.charAt(0), middleName.charAt(0), gender, age, result );
         } catch (Exception e) {
             System.err.println("Ошибка: введенная дата рождения не является корректной.");
         }
